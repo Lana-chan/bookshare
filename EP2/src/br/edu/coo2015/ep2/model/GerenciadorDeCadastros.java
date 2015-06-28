@@ -14,6 +14,12 @@ public class GerenciadorDeCadastros {
 	}
 	
 	public boolean cadastraUsuarioComum(Pessoa pessoa, String senha) throws CadastroException {
+		Pessoa usuario = pessoaDaoHibernate.busca(pessoa);
+		if(usuario == null) throw new CadastroException("Usuário com nusp " + pessoa.getNusp() + " já existe.");
+		if(!pessoa.getSenha().equals(senha)) throw new CadastroException("Senha digitada não é igual em ambos os campos.");
+		
+		pessoaDaoHibernate.adiciona(pessoa);
+		
 		return true;
 	}
 }
