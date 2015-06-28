@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.username">
+			root
+		</property>
+		<property name="hibernate.connection.password">
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:sqlite:\C:\Users\Erin\Dropbox\EP2 COO\workspace\EP2\test.db
+		</property>
+		<property name="hibernate.connection.driver_class">
+			org.sqlite.JDBC
+		</property>
+		<property name="hibernate.dialect">
+			br.edu.coo2015.ep2.util.SQLiteDialect
+		</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<mapping class="br.edu.coo2015.ep2.entity.Pessoa" />
+		<mapping class="br.edu.coo2015.ep2.entity.Livro" />
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,170 @@
+/* CSS Document */
+@charset "utf-8";
+
+/*-----------importando fontes--------------*/
+@font-face{
+	font-family: "Champagne Limousine";
+	src:  url(../fonte/Champagne%20&%20Limousines.ttf) format('truetype');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face{
+	font-family: "Champagne Limousine";
+	src:url(../fonte/Champagne%20&%20Limousines%20Italic.ttf) format('truetype');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face{
+	font-family: "Champagne Limousine";
+	src: url(../fonte/Champagne%20&%20Limousines%20Bold.ttf) format('truetype');
+	font-weight: normal;
+	font-style:bold;
+}
+
+/*-----------Conf da página em si--------------*/
+
+body{
+	alignment-adjust: center;
+	font-size: 20px;
+	background-color: #fff;	
+	line-height: 1.2em;
+	font-family:"Champagne Limousine", Verdana, sans-serif;
+	font-style:normal;
+}
+
+#paginasFixas{
+	background-color: #7c197a;
+	color: #fff;
+	font-size: 20px;
+	font-family:"Champagne Limousine", Verdana, sans-serif;
+	font-style:normal;
+}
+
+
+/*---------Estilo das fontes------------------*/
+	a {
+		text-decoration: underline;
+		color: #BA55D3;
+	}
+		a:active, a:hover {
+			text-decoration: none;
+		}
+
+	strong, b {
+		color: #474747;
+		font-weight: 700;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.75em;
+		font-style: bold;
+		color: #7c197a;
+	}
+
+	h3 {
+		font-size: 1.35em;
+		line-height: 1.5em;
+		font-style:italic;
+		color: #4B0082;
+	}
+
+	h4 {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+	}
+
+/*--------------Header------------------------*/
+#cabecalho{
+	background-color:#7c197a;
+	top: 0;
+	width: 100%;
+	display: flex;
+    align-items: stretch;
+	flex: 1;
+	color: #fff;
+}
+	#cabecalho div, #cabecalho nav{
+		margin: 1em 5em;
+		position: static;
+	}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li a {
+    display: block;
+    width: 60px;
+}
+
+#cabecalhoMenu, #cabecalhoLogo{
+	cursor:pointer;
+	vertical-align:central;
+}
+
+.headerImgMenu{
+	margin: 0em .25em;
+}
+
+#cabecalhoLogo img{
+	display:inline;
+}
+
+#cabecalhoLogo h1{
+	display: inline;
+	vertical-align: super;
+	color: white;
+}
+
+#cabecalhoLogo a{
+	text-decoration: none;
+	dysplay: inline;
+}
+
+/*--------Cabecalho de Seção--------------*/
+#cabecalhoSecao{
+	text-align:center;
+	margin: 2em auto;
+}
+
+
+
+
+

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+/*--------------Section------------------------*/
+section{
+	text-align:center;
+	display: flex;
+    align-items: stretch;
+	flex: 1;
+}
+	section div{
+		margin: 1em 5em;
+		padding: 1em 1em;
+		position: static;
+	}
+
+
