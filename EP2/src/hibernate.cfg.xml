@@ -10,7 +10,7 @@
 		<property name="hibernate.connection.password">
 		</property>
 		<property name="hibernate.connection.url">
-			jdbc:sqlite:\C:\Users\Erin\Dropbox\EP2 COO\workspace\EP2\test.db
+			jdbc:sqlite:test.db
 		</property>
 		<property name="hibernate.connection.driver_class">
 			org.sqlite.JDBC
