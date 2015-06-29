@@ -6,8 +6,8 @@
 <head>
 <meta charset="utf-8">
 <title>BookShare | Coleção</title>
-<link rel="stylesheet" href="css/estilo.css">
-<link rel="stylesheet" href="css/estilo2.css">
+<link rel="stylesheet" href="/WEB-INF/css/estilo.css">
+<link rel="stylesheet" href="/WEB-INF/css/estilo2.css">
 
 </head>
 

@@ -8,8 +8,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>BookShare | Cadastro de Usuário</title>
 		
-				<link rel="stylesheet" href="css/estilo.css">
-		<link rel="stylesheet" href="css/estilo2.css">
+<link rel="stylesheet" href="/WEB-INF/css/estilo.css">
+<link rel="stylesheet" href="/WEB-INF/css/estilo2.css">
 	</head>
 	
 	<body id="paginasFixas">
