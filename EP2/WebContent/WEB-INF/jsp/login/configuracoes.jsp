@@ -21,7 +21,7 @@
     
 <section id="main">
 
-<form>
+<form action="salvarConfiguracoes">
 	<fieldset class="grupo">
     
         <legend> Perfil </legend>
