@@ -106,6 +106,16 @@ public class LoginController {
 			result.redirectTo(this).problemaNaAutenticacao(e.getMessage());
 		}
 	}
+	
+	public void atualiza(@NotNull @Valid Pessoa pessoa) {
+		validator.onErrorUsePageOf(LoginController.class).errorPage();
+		try {
+			gerenciadorDeCadastros.atualizaUsuario(pessoa);
+			result.redirectTo(this).configuracoes();
+		} catch(CadastroException e) {
+			result.redirectTo(this).problemaNaAutenticacao(e.getMessage());
+		}
+	}
 
 	public void logadoComSucesso() {
 		result.include("nome", usuarioSession.getUsuarioLogado().getNome());
@@ -119,5 +129,11 @@ public class LoginController {
 	public void listaLivros() {
 		result.include("livros",
 				bibliotecaCompartilhadaFacade.listaTodosLivros());
+	}
+	
+	@RestritoUsuarioCadastrado
+	public void configuracoes() {
+		result.include("pessoa",
+				usuarioSession.getUsuarioLogado());
 	}
 }

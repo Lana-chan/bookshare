@@ -26,6 +26,12 @@ public class PessoaDaoHibernate implements Serializable  {
 		this.session.save(pessoa);
 		tx.commit();
 	}
+	
+	public void atualiza(Pessoa pessoa) {
+		Transaction tx = this.session.beginTransaction();
+		this.session.update(pessoa);
+		tx.commit();
+	}
 
 	public Pessoa busca(Pessoa pessoa) {
 		return (Pessoa) session.createCriteria(Pessoa.class)
