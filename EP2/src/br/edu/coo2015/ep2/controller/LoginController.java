@@ -2,6 +2,7 @@ package br.edu.coo2015.ep2.controller;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.validation.Valid;
@@ -10,10 +11,10 @@ import javax.validation.constraints.NotNull;
 import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
-
 import br.edu.coo2015.ep2.dao.LivroDaoHibernate;
 import br.edu.coo2015.ep2.dao.PessoaDaoHibernate;
 import br.edu.coo2015.ep2.entity.Pessoa;
+import br.edu.coo2015.ep2.entity.Unidade;
 import br.edu.coo2015.ep2.model.AutenticacaoException;
 import br.edu.coo2015.ep2.model.CadastroException;
 import br.edu.coo2015.ep2.model.BibliotecaCompartilhadaFacade;
@@ -76,10 +77,11 @@ public class LoginController {
 	}
 
 	public void informaUsuarioSenha() {
-		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
-		Date date = new Date();
-		result.include("dataHoje", dateFormat.format(date));
 	}
+	
+	public void cadastroUsuario() {
+		result.include("unidades", Arrays.asList(Unidade.values()));
+	}	
 
 	public void autentica(@NotNull @Valid Pessoa pessoa) {
 		validator.onErrorUsePageOf(LoginController.class).errorPage();
