@@ -7,8 +7,8 @@
 <head>
 <meta charset="utf-8">
 <title>BookShare | Notificações</title>
-<link rel="stylesheet" href="/WEB-INF/css/estilo.css">
-<link rel="stylesheet" href="/WEB-INF/css/estilo2.css">
+		<link rel="stylesheet" href="/content/css/estilo.css">
+		<link rel="stylesheet" href="/content/css/estilo2.css">
 </head>
 
 <body>
@@ -66,7 +66,6 @@
 
 <section>
 		<div class="campo">
- 			<img src="livro.foto" alt="Foto do livro" width="120" height="180">
             
             <div>
         		<z4><u>Memórias de um Sargento de Milícias</u></z4>

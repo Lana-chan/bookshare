@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>BookShare | Página Inicial</title>
-<link rel="stylesheet" href="css/estilo.css">
-<link rel="stylesheet" href="css/estilo2.css">
+
+
+		<link rel="stylesheet" href="/content/css/estilo.css">
+		<link rel="stylesheet" href="/content/css/estilo2.css">
 
 
 </head>

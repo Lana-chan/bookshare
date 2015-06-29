@@ -1,41 +1,16 @@
 <!doctype html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="utf-8">
 <title>BookShare | Configurações</title>
-<link rel="stylesheet" href="/WEB-INF/css/estilo.css">
-<link rel="stylesheet" href="/WEB-INF/css/estilo2.css">
+		<link rel="stylesheet" href="/content/css/estilo.css">
+		<link rel="stylesheet" href="/content/css/estilo2.css">
 </head>
 
 <body>
 
-<!-----------Cabecalho------------------->
-<header id="cabecalho">
-  <div id="cabecalhoLogo">
-    	<a href="pesquisa.html">
-        	<img src="imgs/logo_32.png">
-        	<h1> BookShare </h1>
-        </a>
-   </div>
-    
-  <div id="cabecalhoWelcome">
-    	<p> Bem-vinda, @usuaria </p>
-    </div>
-
-	<nav id="cabecalhoMenu">
-    <a href="minhaColecao.html"><img src="imgs/colecao_32.png" alt="Coleção" class="headerImgMenu"></a> 
-	  <a href="notificacoes.html">
-      <img src="imgs/notificacoes_32.png" alt="Notificações" class="headerImgMenu"></a>
-      <a href="pesquisa.html">
-      <img src="imgs/pesquisa_32.png" alt="Pesquisa" class="headerImgMenu"></a>
-	  <a href="configuracoes.html">
-      <img src="imgs/config_32.png" alt="Configurações" class="headerImgMenu"></a> 
-	  <a href="login.html">
-      <img src="imgs/logout_32.png" alt="Log Out" class="headerImgMenu"></a>
-
-    </nav>
-    
-</header>
+<c:import url="/WEB-INF/login/cabecalho.html" />
 
 
 <!-----------Main------------------->
@@ -67,11 +42,11 @@
     <fieldset class="grupo">
     <legend> Segurança </legend>
     <div class="campo">
-      <label>Senha: </label>
+      <label>Nova Senha: </label>
       <input type="password" name="pessoa.senha">
       </div>
       <div class="campo">
-      <label>Nova senha: </label>
+      <label>Repita a nova senha: </label>
       <input type="password" name="pessoa.senha">
       </div>   
     </fieldset>  
