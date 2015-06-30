@@ -16,8 +16,8 @@
 	<body id="paginasFixas">
     
   <header id="cabecalho">
-  <div id="cabecalhoLogo">
-    	<a href="pesquisa.html">
+<div id="cabecalhoLogo">
+    	<a href="pesquisa">
         	<img src="../content/imgs/logo_32.png">
         	<h1> BookShare </h1>
         </a>

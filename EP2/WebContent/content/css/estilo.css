@@ -4,21 +4,21 @@
 /*-----------importando fontes--------------*/
 @font-face{
 	font-family: "Champagne Limousine";
-	src:  url(/WEB-INF/fonte/Champagne%20&%20Limousines.ttf) format('truetype');
+	src:  url(../content/fonte/Champagne%20&%20Limousines.ttf) format('truetype');
 	font-weight: normal;
 	font-style:normal;
 }
 
 @font-face{
 	font-family: "Champagne Limousine";
-	src:url(/WEB-INF/fonte/Champagne%20&%20Limousines%20Italic.ttf) format('truetype');
+	src:url(../content/fonte/Champagne%20&%20Limousines%20Italic.ttf) format('truetype');
 	font-weight: normal;
 	font-style:italic;
 }
 
 @font-face{
 	font-family: "Champagne Limousine";
-	src: url(/WEB-INF/fonte/Champagne%20&%20Limousines%20Bold.ttf) format('truetype');
+	src: url(../content/fonte/Champagne%20&%20Limousines%20Bold.ttf) format('truetype');
 	font-weight: normal;
 	font-style:bold;
 }
@@ -258,33 +258,42 @@ fieldset.grupo .campo {
     margin-bottom: 1em;
 }
  
- /*-------TABELA DE INBOX OUTBOX----------*/
+  /*-------TABELA DE INBOX OUTBOX----------*/
 
 .tabelaColecao{
 	border-collapse:collapse;
-	border: 2px solid #696969;
 	table-layout: fixed;
 	text-align:left;
-	align-content: flex-start;
+	align-content: center;
 	width: 80%;
+	margin-left: 70px;
+	
 }
-/*
+
 .colunaImagem{
-	  width: 15%;
-	  background-color: red;
+	width: 6%;
+	background-color: #F5F5F5;
+	padding: 1em;
+	position: relative;
+	border-bottom-left-radius: 25px;
 }
-*/	
+	
 .colunaDados{
-	width: 40%;
-	background-color: blue;
+	width: 20%;
+	background-color: #F5F5F5;
+	position: relative;
 }
 	
 .colunaStatus{
-	width: 25%;
+	width: 10%;
+	background-color: #F5F5F5;
 }
 	
 .colunaBotoesAcao{
-	width: 20%;
+	width: 10%;
+	background-color: #F5F5F5;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 
  /*----------------BOTÃ•ES------------------*/

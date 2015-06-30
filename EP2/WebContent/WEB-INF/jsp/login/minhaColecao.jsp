@@ -20,7 +20,7 @@
 </header>
 
 
-<fieldset class="grupo">
+<fieldset class="grupo" style="input{display:none;}">
       <input name="menu" id="hello" type="radio" value="hello" checked="checked" />
       <label for="hello"><c>Inbox<br><z>(Livros recebidos)</z></c></label>
       <input name="menu" id="lorem" type="radio" value="lorem" />
