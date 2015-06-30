@@ -26,6 +26,8 @@
       <input name="menu" id="lorem" type="radio" value="lorem" />
       <label for="lorem"><c>Outbox<br><z>(Livros para doação)</z></c></label>
   
+  
+
 	<pp class="tab-hello">
     <div id="tab1">
 		<table class="tabelaColecao">
@@ -41,13 +43,21 @@
             <td class="colunaStatus">
             <fieldset>
             <h5> Status</h5>
-            <z3> ${ status }</z3>
+            <z3> ${ estado }</z3>
             </fieldset>
             </td>
            <!--4 coluna: botoes de ação-->
             <td class="colunaBotoesAcao">
-            <button type="submit" class="btnAcesso" id="btnConfirma"><z2>Confirmar Recebimento</z2></button>
-            <button type="submit" class="btnAcesso" id="btnCancela"><z2>Cancelar Transação</z2></button>
+            <c:if test="${ ((estado != null)&&(estado == TransacaoAceita)) }">
+            
+               <form action="alteraEstado">
+               <button type="submit" class="btnAcesso" id="btnConfirma" action="Confirma">
+               <z2>Confirmar Recebimento</z2></button>
+         
+               <button type="submit" class="btnAcesso" id="btnCancela" action="Cancela">
+               <z2>Cancelar Transação</z2></button>
+               </form>
+            </c:if>
             </td>
           </tr>
         </table>
@@ -64,19 +74,27 @@
             <td class="colunaDados">
             <z4><u>${titulo}</u></z4>
             <z3><br><i>${autor}</i></z3>
-            <z><br>Número de interessados: ${nroInteressados}</z>
             </td>
            <!--3 coluna: status do exemplar-->
             <td class="colunaStatus">
             <fieldset>
             <h5>Status</h5>
-            <z3>${status}</z3>
+            <z3>${estado}</z3>
             </fieldset>
             </td>
            <!--4 coluna: botoes de ação-->
             <td class="colunaBotoesAcao">
-            <button type="submit" class="btnAcesso" id="btnConfirma"><z2>Aprovar doação</z2></button>
-            <button type="submit" class="btnAcesso" id="btnCancela"><z2>Excluir da lista</z2></button>
+            
+            <c:if test="${ ((estado != null)) }">
+            
+               <form action="alteraEstado">
+               <button type="submit" class="btnAcesso" id="btnConfirma" action="Aceita"> <!-- aceita transacao -->
+               <z2>Aprovar doação</z2></button>
+         
+               <button type="submit" class="btnAcesso" id="btnCancela" action="Cancela"> <!-- nega transacao -->
+               <z2>Negar doação</z2></button>
+               </form>
+            </c:if>
             </td>
           </tr>
         </table>

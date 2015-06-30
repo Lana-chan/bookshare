@@ -62,8 +62,10 @@
 
 								<!--2 coluna: botoes de ação-->
 								<td class="colunaBotoesAcao">
+								<c:if test="${estado == null}">
 									<button type="submit" class="btnAcesso" id="btnPaginaNormal"
 									action="transacao.solicita">Solicitar Livro</button>
+								</c:if>
 								</td>
 							</tr>
 						</table>
