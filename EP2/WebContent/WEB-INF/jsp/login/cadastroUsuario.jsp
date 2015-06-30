@@ -66,7 +66,6 @@
                 <input type="password" name="senha" autofocus>
              </div>
             </fieldset>
-			
             <button type="submit" class="btnAcesso" id="btnPaginaFixa">Cadastre-me!</button>
 		</form>
 		</section>
