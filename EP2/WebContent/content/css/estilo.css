@@ -268,24 +268,23 @@ fieldset.grupo .campo {
 	align-content: flex-start;
 	width: 80%;
 }
-
+/*
 .colunaImagem{
 	  width: 15%;
 	  background-color: red;
 }
-	
+*/	
 .colunaDados{
-	width: 45%;
+	width: 40%;
 	background-color: blue;
-	width: 100px;
 }
 	
 .colunaStatus{
-	width: 20%;
+	width: 25%;
 }
 	
 .colunaBotoesAcao{
-	width: 15%;
+	width: 20%;
 }
 
  /*----------------BOTÕES------------------*/
@@ -297,6 +296,7 @@ fieldset.grupo .campo {
 	border-width:2px;
 	border-style:solid;
 	padding: 5px 5px;
+	margin: auto;
 	border-radius: 3px;
 }
 
@@ -316,12 +316,14 @@ fieldset.grupo .campo {
 	border-color: #6C0;
 	color: white;
 	background: #6C0;
+	width: 70%;
   }
   
   #btnCancela {
 	border-color: #F03;
 	color: white;
 	background: #F03;
+	width: 70%;
   }
 
 
