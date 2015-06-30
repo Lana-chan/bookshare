@@ -1,15 +1,15 @@
 package br.edu.coo2015.ep2.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.CascadeType;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
-
-import br.edu.coo2015.ep2.entity.Unidade;
-
 
 @Entity
 public class Pessoa implements Serializable {
@@ -23,9 +23,15 @@ public class Pessoa implements Serializable {
 	@Length(min = 3, message="Senha deve ter mínimo de 3 caracteres")
 	private String senha;
 	
+	@NotNull
 	private String nome;
+	
+	@NotNull
 	private String email;
 	private Unidade unidade;
+	
+	@OneToMany(mappedBy="dono", cascade = {CascadeType.ALL, CascadeType.MERGE, CascadeType.PERSIST})
+	private List<Exemplar> exemplares;
 	
 	public Pessoa() {}
 	
@@ -76,5 +82,13 @@ public class Pessoa implements Serializable {
 
 	public void setUnidade(Unidade unidade) {
 		this.unidade = unidade;
+	}
+	
+	public void adicionaExemplar(Exemplar exemplar) {
+		exemplares.add(exemplar);
+	}
+	
+	public void removeExemplar(Exemplar exemplar) {
+		exemplares.remove(exemplar);
 	}
 }

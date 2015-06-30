@@ -5,6 +5,9 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
+import javax.persistence.ManyToOne;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
 
 @Entity
 public class Exemplar implements Serializable {
@@ -15,6 +18,8 @@ public class Exemplar implements Serializable {
 	@GeneratedValue
 	private int id;
 	
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn
 	private Pessoa dono;
 	private Livro livro;
 

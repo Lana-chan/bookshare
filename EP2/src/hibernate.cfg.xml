@@ -26,5 +26,6 @@
 
 		<mapping class="br.edu.coo2015.ep2.entity.Pessoa" />
 		<mapping class="br.edu.coo2015.ep2.entity.Livro" />
+		<mapping class="br.edu.coo2015.ep2.entity.Exemplar" />
 	</session-factory>
 </hibernate-configuration>

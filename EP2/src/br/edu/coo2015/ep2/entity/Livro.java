@@ -22,7 +22,7 @@ public class Livro implements Serializable {
 	private String idioma;
 	private int edicao;
 	private int numPags;
-
+	
 	public Livro(Long iSBN, String titulo, String autor, String editora,
 			String sinopse, String idioma, int edicao, int numPags) {
 		ISBN = iSBN;
