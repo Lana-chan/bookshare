@@ -24,48 +24,45 @@
     
 <section id="main">
 
-<form>
+<form action="<c:url value="/LivroDaoHibernate/adiciona"/>">
 	<fieldset class="grupo">
     
         <legend> Dados do livro </legend>
         <div class="campo">
         	<label>Título: </label>
-            <input type="text" id="Livro.titulo">
+            <input type="text" name="livro.titulo">
         </div>
         <div class="campo">
             <label>Autor: </label>
-            <input type="text" id="Livro.autor">
+            <input type="text" name="livro.autor">
         </div>
         <div class="campo">
             <label>Editora: </label>
-            <input type="text" id="Livro.editora">
+            <input type="text" name="livro.editora">
         </div>
         <div class="campo">
             <label>Idioma: </label>
-            <input type="text" id="Livro.idioma">
+            <input type="text" name="livro.idioma">
         </div>
         <div class="campo">
             <label>Edição: </label>
-            <input type="text" id="Livro.edicao">
+            <input type="text" name="livro.edicao">
         </div>
         <div class="campo">
             <label>Ano: </label>
-            <input type="text" id="Livro.ano">
+            <input type="text" name="livro.ano">
         </div>
         <div class="campo">
             <label>Número de páginas: </label>
-            <input type="text" id="Livro.nropag">
+            <input type="text" name="livro.numPags">
         </div>
         <div class="campo">
             <label>ISBN: </label>
-            <input type="text" id="Livro.isbn">
-        </div>
-        <div class="campo">
-            <label>Imagem: </label><input type="file" name="Livro.foto">
+            <input type="text" name="livro.ISBN">
         </div>
         <div class="campo">
             <label>Sinopse: </label>
-            <textarea name="sinopse" rows="10" cols="60"></textarea>
+            <textarea name="livro.sinopse" rows="10" cols="60"></textarea>
         </div>
 	</fieldset> 
     

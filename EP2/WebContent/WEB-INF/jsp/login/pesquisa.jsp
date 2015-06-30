@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>BookShare | Notificações</title>
+<title>BookShare | Pesquisa</title>
 	
 	<link rel="stylesheet" href="../content/css/estilo.css">
 
@@ -24,8 +24,7 @@
       <input type="search" size="50">
       <button type="submit" class="btnAcesso" id="btnPaginaNormal"><img src="imgs/pesquisa_32.png" alt="Pesquisar"></button>
         <z2><br> Buscar por: 
-          <input type="radio" value="exemplar.titulo"> 
-          Título
+          <input type="radio" value="exemplar.titulo"> Título
         <input type="radio" value="exemplar.autor"> Autor
         <input type="radio" value="exemplar.ISBN"> ISBN
     	<input type="checkbox" value="exemplar.unidade"> Pesquisar somente na minha unidade.
@@ -33,26 +32,47 @@
 </div>
 </section>
 
+
 <section id="resultados">
 	<div>
 	<h5>Resultados encontrados para "Física":</h5>
     </div>
 </section>
 
-<section>
-		<div class="campo">
-            
-            <div>
-        		<z4><u>Memórias de um Sargento de Milícias</u></z4>
-            	<z3><br><i>Manuel Antônio de Almeida</i></z3>
-            	<z><br>Proprietário: @Usuario</z>
-            	<z><br>Unidade: @Unidade </z>
-        	</div>
-			<div>
-    			<button type="submit" class="btnAcesso" id="btnPaginaNormal">Incluir livro</button>
-    		</div>
-        </div>
-        </section>
+<section> 
+   <c:choose>
+		<c:when test="${empty transacoesList}">
+			<h5>Não há resultados para essa pesquisa</h5>
+			<button type="button" class="btnAcesso" id="btnPaginaNormal">Cadastrar Livro</button>			
+		</c:when>
+	<c:otherwise>
+		<c:forEach var="exemplar" items="${ExemplarList}">
+			<c:if test="${true transacoes.recebida}">
+				<pp class="tab-hello">
+					<div id="tab1">
+						<table class="tabelaColecao">
+							<tr>
+								<!--1 coluna-->
+								<td>
+								    <z4><u>${exemplar.titulo}</u></z4> <br>
+									<z3><i>${exemplar.autor}</i></z3> <br>
+									<z>Proprietário: @${exemlar.dono}</z><br>
+									<z>Unidade: @{exemplar.dono.unidade}</z>
+								</td>
+
+								<!--2 coluna: botoes de ação-->
+								<td class="colunaBotoesAcao">
+									<button type="submit" class="btnAcesso" id="btnPaginaNormal"
+									action="transacao.solicita">Solicitar Livro</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</pp>
+				</c:if>
+			</c:forEach>
+		</c:otherwise>
+	</c:choose> </section>
 
 
 

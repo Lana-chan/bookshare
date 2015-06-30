@@ -24,14 +24,14 @@
     </div>
     
     <div id="infoLivro">
-      <h1> Nome Livro </h1>
-      <h5> Autor livro </h5>
-      <h6> Sinopse do lviro aiwdnoandwonavomwoamaobn vaiu vhavnroav oawurvho vav rao </h6>
+      <h1> ${titulo} </h1>
+      <h5> ${autor} </h5>
+      <h6> ${sinopse} } </h6>
     </div>  
     
     <div id="donoLivro">
 		<h6>O livro está em posse de:</h6>
-        <img src="dono.foto" alt="Foto do dono" width="100" height="100">
+        <p> ${dono}</p>
         <br>
         <button type="submit" class="btnAcesso" id="btnPaginaNormal">Solicitar este livro</button>
         <section>
@@ -44,22 +44,22 @@
     <h4>Especificações</h4>
     <fieldset class="grupo">
     <div class="campo">
-    	<z2>Editora: </z2>
+    	<z2>Editora: {$editora}</z2>
     </div>
     <div class="campo">
-    	<z2>Idioma: </z2>
+    	<z2>Idioma: {$idioma}</z2>
     </div>
     <div class="campo">
-    	<z2>Edição: </z2>
+    	<z2>Edição: {$edicao}</z2>
     </div>
     <div class="campo">
-    	<z2>Ano: </z2>
+    	<z2>Ano: {$ano}</z2>
     </div>
     <div class="campo">
-    	<z2>Número de páginas: </z2>
+    	<z2>Número de páginas: {$nroPaginas}</z2>
     </div>
     <div class="campo">
-    	<z2>ISBN: </z2>
+    	<z2>ISBN: {$ISBN}</z2>
     </div>
     </fieldset>
 </section>

@@ -37,6 +37,12 @@ public class PessoaDaoHibernate implements Serializable  {
 		return (Pessoa) session.createCriteria(Pessoa.class)
 				.add(Restrictions.eq("nusp", pessoa.getNusp())).uniqueResult();
 	}
+	
+	public Pessoa buscaUsuario(Pessoa pessoa) {
+		return (Pessoa) session.createCriteria(Pessoa.class)
+				.add(Restrictions.eq("nusp", pessoa.getNusp()))
+				.add(Restrictions.eq("senha", pessoa.getSenha())).uniqueResult();
+	}
 
 	@SuppressWarnings("unchecked")
 	public List<Pessoa> buscaPorNome(String nome) {

@@ -28,15 +28,15 @@
         <legend> Perfil </legend>
         <div class="campo">
         	<label>Nome: </label>
-            <input type="text" id="pessoa.nusp">
+            <input type="text" name="pessoa.nusp">
         </div>
         <div class="campo">
             <label>Unidade: </label>
-            <input type="text" id="pessoa.unidade">
+            <input type="text" name="pessoa.unidade">
         </div>
         <div class="campo">
             <label>Email: </label>
-            <input type="email" id="pessoa.email">
+            <input type="email" name="pessoa.email">
         
 	</fieldset>
     

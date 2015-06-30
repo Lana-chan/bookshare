@@ -158,7 +158,7 @@ nav > ul > li a {
 	dysplay: inline;
 }
 
-/*--------Cabecalho de SEÃ‡ÃƒO--------------*/
+/*--------Cabecalho de SEÇÃO--------------*/
 #cabecalhoSecao{
 	text-align:center;
 	margin: 2em auto;
@@ -195,6 +195,14 @@ section{
 	#notificacoes.click {
    		display: none;
 	}
+	
+.solicitacaoRecebida{ border-left: 2px solid yellow; }
+
+.solicitacaoNegada{ border-left: 2px solid red; }
+
+.transacaoConfirmada{ border-left: 2px solid green; }
+
+.transaçãoCancelada{ border-left: 2px solid black; }
 	
 	
 /*-------------FORMULÃ�RIOS---------------*/

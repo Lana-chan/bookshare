@@ -85,7 +85,7 @@ public class LoginController {
 		result.include("unidades", Arrays.asList(Unidade.values()));
 	}	
 
-	public void autentica(@NotNull @Valid Pessoa pessoa) {
+	public void autentica(@Valid Pessoa pessoa) {
 		validator.onErrorUsePageOf(LoginController.class).errorPage();
 		try {
 			gerenciadorDeAutenticacoes.autenticaUsuarioComum(pessoa);

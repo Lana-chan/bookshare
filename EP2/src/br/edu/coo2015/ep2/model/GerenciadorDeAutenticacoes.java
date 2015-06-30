@@ -19,7 +19,7 @@ public class GerenciadorDeAutenticacoes {
 		/*if(!"Raulzito".equalsIgnoreCase(pessoa.getUsuario())) {
 			throw new AutenticacaoException("Usu‡rio " + pessoa.getUsuario() + " inexistente.");
 		}*/
-		Pessoa usuario = pessoaDaoHibernate.busca(pessoa);
+		Pessoa usuario = pessoaDaoHibernate.buscaUsuario(pessoa);
 		if(usuario == null) throw new AutenticacaoException("Usuário com nusp " + pessoa.getNusp() + " inexistente.");
 		
 		// compara a senha digitada com a senha encontrada no BD

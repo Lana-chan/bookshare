@@ -20,7 +20,7 @@
 </header>
 
 
-<fieldset class="grupo" style="input{display:none;}">
+<fieldset class="grupo" style="display:none;">
       <input name="menu" id="hello" type="radio" value="hello" checked="checked" />
       <label for="hello"><c>Inbox<br><z>(Livros recebidos)</z></c></label>
       <input name="menu" id="lorem" type="radio" value="lorem" />
@@ -32,9 +32,7 @@
           <tr>
           <!--1 coluna: imagem-->
             <td class="colunaImagem">
-				<div class="campo">
-    			<img src="livro.foto" alt="Foto do livro" width="120" height="180">
-                </div>
+
             </td>
            <!--2 coluna: dados do livro-->
             <td class="colunaDados">

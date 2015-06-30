@@ -20,31 +20,43 @@
 </header>
 
 <section id="notificacoes">
-	<div class="solicitacaoRecebida">
-    <p> USUARIO solicita LIVRO </p>
-    <blockquote> mensagem </blockquote>
-    </div>
-    
-    <div class="solicitacaoNegada">
-    <p>A sua solicitação de LIVRO foi negada.</p>
-    </div>
-    
-    <div class="transacaoConfirmada">
-    <p>A transação do LIVRO foi confirmada por USUARIO.</p>
-    </div>
-    
-    <div class="recebeuAvaliacao">
-    <p>Você foi avaliado em AVALIAÇÃO por USUARIO.</p>
-    </div>
-    
-    <div class="mensagem">
-    <p>USUARIO disse (DATA):</p>
-    <blockquote> mensagem </blockquote>
-    </div>
-    
-    <div class="transaçãoCancelada">
-    <p>A transação do LIVRO foi cancelada por USUARIO.</p>
-    </div>
+
+   <c:choose>
+		<c:when test="${empty transacoesList}">
+			<h4>Não há nenhuma notificação pra você.</h4>
+		</c:when>
+		<c:otherwise>
+			<c:forEach var="transacoes" items="${transacoesList}">
+				<c:if test="${true transacoes.recebida}">
+					<div class="solicitacaoRecebida">
+						<p>@{$transacoes.solicitante} solicita @{$transacoes.exemplar}</p>
+						<blockquote>${transacoes.mensagem}</blockquote>
+					</div>
+				</c:if>
+
+				<c:if test="${true transacoes.negada}">
+					<div class="solicitacaoNegada">
+						<p>@{$transacoes.solicitado} negou
+							@{$transacoes.exemplar.titulo}</p>
+					</div>
+				</c:if>
+
+				<c:if test="${true transacoes.confirmada}">
+					<div class="transacaoConfirmada">
+						<p>A transação de ${transacoes.exemplar.titulo} foi confirmada
+							por @${transacoes.exemplar.nome}.</p>
+					</div>
+				</c:if>
+
+				<c:if test="${true transacoes.cancelada}">
+					<div class="transaçãoCancelada">
+						<p>A transação de ${transacoes.exemplar.titulo} foi cancelada
+							por @${transacoes.exemplar.nome}.</p>
+					</div>
+				</c:if>
+			</c:forEach>
+		</c:otherwise>
+	</c:choose>
     
 </section>
 
