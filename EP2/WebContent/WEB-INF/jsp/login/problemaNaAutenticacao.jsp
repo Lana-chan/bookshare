@@ -4,8 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Exemplo EP2</title>
 
-		<link rel="stylesheet" href="/content/css/estilo.css">
-		<link rel="stylesheet" href="/content/css/estilo2.css">
+		<link rel="stylesheet" href="../content/css/estilo.css">
 </head>
 <body>
 	<br>

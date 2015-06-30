@@ -5,13 +5,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
-	<head>
+<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>BookShare | Cadastro de Usuário</title>
-		
-		<link rel="stylesheet" href="../content/css/estilo.css">
-		<link rel="stylesheet" href="../content/css/estilo2.css">
-	</head>
+	
+	<link rel="stylesheet" href="../content/css/estilo.css">
+
+</head>
 	
 	<body id="paginasFixas">
     
