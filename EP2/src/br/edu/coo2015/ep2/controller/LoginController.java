@@ -147,4 +147,8 @@ public class LoginController {
 		result.include("pessoa",
 				usuarioSession.getUsuarioLogado());
 	}
+	
+	public void alteraEstado(){
+		
+	}
 }

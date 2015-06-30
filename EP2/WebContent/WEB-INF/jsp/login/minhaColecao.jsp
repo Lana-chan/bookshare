@@ -50,11 +50,11 @@
             <td class="colunaBotoesAcao">
             <c:if test="${ ((estado != null)&&(estado == TransacaoAceita)) }">
             
-               <form action="alteraEstado">
-               <button type="submit" class="btnAcesso" id="btnConfirma" action="Confirma">
+               <form name="alteraEstado">
+               <button type="submit" class="btnAcesso" id="btnConfirma" action=Confirma()>
                <z2>Confirmar Recebimento</z2></button>
          
-               <button type="submit" class="btnAcesso" id="btnCancela" action="Cancela">
+               <button type="submit" class="btnAcesso" id="btnCancela" action=Cancela()>
                <z2>Cancelar Transação</z2></button>
                </form>
             </c:if>
@@ -87,11 +87,11 @@
             
             <c:if test="${ ((estado != null)) }">
             
-               <form action="alteraEstado">
-               <button type="submit" class="btnAcesso" id="btnConfirma" action="Aceita"> <!-- aceita transacao -->
+               <form name="alteraEstado">
+               <button type="submit" class="btnAcesso" id="btnConfirma" onClick=Aceita()> <!-- aceita transacao -->
                <z2>Aprovar doação</z2></button>
          
-               <button type="submit" class="btnAcesso" id="btnCancela" action="Cancela"> <!-- nega transacao -->
+               <button type="submit" class="btnAcesso" id="btnCancela" onClick=Cancela()> <!-- nega transacao -->
                <z2>Negar doação</z2></button>
                </form>
             </c:if>
@@ -111,7 +111,22 @@
   
  
 
-
+     <SCRIPT LANGUAGE="JavaScript">
+            
+            function Aceita()
+            {
+                
+            }    
+            function Confirma()
+            {
+                
+            }
+            function Cancela()
+            {
+                
+            }  
+            
+        </SCRIPT>
 
 
     
