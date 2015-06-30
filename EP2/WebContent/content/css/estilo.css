@@ -327,3 +327,36 @@ fieldset.grupo .campo {
   }
 
 
+
+input + label {
+  display: block;
+  float: left;
+  background: #DFDFDF;
+  padding: 0.6em;
+  margin: 3em -3.5em -0.2em 3.5em;
+  cursor: pointer;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+input:checked + label {
+  background: #F5F5F5;
+}
+
+pp {
+  clear:left;
+}
+
+.tab-hello,
+.tab-lorem,
+.tab-foo
+{
+  display: none;
+}
+
+#hello:checked ~ pp.tab-hello,
+#lorem:checked ~ pp.tab-lorem,
+#baz:checked ~ pp.tab-foo
+{
+  display: block;
+}

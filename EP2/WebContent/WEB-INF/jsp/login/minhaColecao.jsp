@@ -6,14 +6,13 @@
 <head>
 <meta charset="utf-8">
 <title>BookShare | Coleção</title>
-		<link rel="stylesheet" href="/content/css/estilo.css">
-		<link rel="stylesheet" href="/content/css/estilo2.css">
+		<link rel="stylesheet" href="../content/css/estilo.css">
 
 </head>
 
 <body>
-<jsp:include page='cabecalho.jsp'/>
 
+<jsp:include page='cabecalho.jsp'/>
 
 <!-----------Corpo------------------->
 <header id="cabecalhoSecao">
@@ -22,7 +21,6 @@
 
 
 <fieldset class="grupo">
-	  <link rel="stylesheet" href="css/teste.css">
       <input name="menu" id="hello" type="radio" value="hello" checked="checked" />
       <label for="hello"><c>Inbox<br><z>(Livros recebidos)</z></c></label>
       <input name="menu" id="lorem" type="radio" value="lorem" />
