@@ -102,6 +102,30 @@ body{
 		font-size: 0.7em;
 		line-height: 1.5em;
 	}
+	
+	z {
+		font-size: 0.7em;
+		line-height: 1.5em;
+		font-weight: 700;
+		font-style: normal;
+	}
+	
+	z2 {
+		font-size: 0.8em;
+		font-style: normal;
+	}
+	
+	/*autor livro*/
+	z3 {
+	font-size: 0.8em;
+	line-height: 1em;
+	text-align: center;
+	}
+	
+	/*título livro*/
+	z4 {
+		font-size: 1em;
+	}
 
 /*--------------Header------------------------*/
 #cabecalho{
@@ -277,19 +301,13 @@ fieldset.grupo .campo {
 	margin-left: 70px;
 	
 }
-
-.colunaImagem{
-	width: 6%;
-	background-color: #F5F5F5;
-	padding: 1em;
-	position: relative;
-	border-bottom-left-radius: 25px;
-}
 	
 .colunaDados{
 	width: 20%;
 	background-color: #F5F5F5;
+	padding: 2.8em;
 	position: relative;
+	border-bottom-left-radius: 25px;
 }
 	
 .colunaStatus{
@@ -343,8 +361,7 @@ fieldset.grupo .campo {
 	width: 70%;
   }
 
-
-
+ /*-----------------ABAS--------------------*/
 input + label {
   display: block;
   float: left;

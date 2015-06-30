@@ -20,7 +20,7 @@
 </header>
 
 
-<fieldset class="grupo" style="display:none;">
+<fieldset class="grupo" style="input{display:none;}">
       <input name="menu" id="hello" type="radio" value="hello" checked="checked" />
       <label for="hello"><c>Inbox<br><z>(Livros recebidos)</z></c></label>
       <input name="menu" id="lorem" type="radio" value="lorem" />
@@ -30,23 +30,19 @@
     <div id="tab1">
 		<table class="tabelaColecao">
           <tr>
-          <!--1 coluna: imagem-->
-            <td class="colunaImagem">
-
-            </td>
            <!--2 coluna: dados do livro-->
             <td class="colunaDados">
-            <z4><u>Memórias de um Sargento de Milícias</u></z4>
-            <z3><br><i>Manuel Antônio de Almeida</i></z3>
-            <z><br>Proprietário: @Usuario</z>
-            <z><br>Unidade: @Unidade </z>
+            <z4><u>${ titulo }</u></z4>
+            <z3><br><i>${ autor }</i></z3>
+            <z><br>Proprietário: ${ dono }</z>
+            <z><br>Unidade: ${ unidade } </z>
             </td>
            <!--3 coluna: status do exemplar-->
             <td class="colunaStatus">
             <fieldset>
             <h5> Status</h5>
-            <z3> Solicitação aprovada. Aguardando confirmação de entrega.</z3>
-            <fieldset>
+            <z3> ${ status }</z3>
+            </fieldset>
             </td>
            <!--4 coluna: botoes de ação-->
             <td class="colunaBotoesAcao">
@@ -64,23 +60,17 @@
     	<div id="tab2">
 		<table class="tabelaColecao">
           <tr>
-          <!--1 coluna: imagem-->
-            <td class="colunaImagem">
-				<div class="campo">
-    			<img src="livro.foto" alt="Foto do livro" width="120" height="180">
-                </div>
-            </td>
            <!--2 coluna: dados do livro-->
             <td class="colunaDados">
-            <z4><u>O Menino Maluquinho</u></z4>
-            <z3><br><i>Ziraldo</i></z3>
-            <z><br>Número de interessados: </z>
+            <z4><u>${titulo}</u></z4>
+            <z3><br><i>${autor}</i></z3>
+            <z><br>Número de interessados: ${nroInteressados}</z>
             </td>
            <!--3 coluna: status do exemplar-->
             <td class="colunaStatus">
             <fieldset>
             <h5>Status</h5>
-            <z3>Aguardando a sua aprovação para um dos interessados.</z3>
+            <z3>${status}</z3>
             </fieldset>
             </td>
            <!--4 coluna: botoes de ação-->

@@ -26,7 +26,7 @@
     <div id="infoLivro">
       <h1> ${titulo} </h1>
       <h5> ${autor} </h5>
-      <h6> ${sinopse} } </h6>
+      <h6> ${sinopse} </h6>
     </div>  
     
     <div id="donoLivro">
@@ -63,32 +63,6 @@
     </div>
     </fieldset>
 </section>
-
-<section id="historico">
-	<h4>Este livro já pertenceu à:</h4>
-    </section>
-    <section>
-    <div class="campo">
-	<fieldset class="grupo">
-    <img src="dono.foto" alt="Foto do dono" width="100" height="100">
-    <h6><u>link para a pag do dono</u></h6>
-    <h6>Até 15/05/2013</h6>
-    </fieldset>
-    <fieldset class="grupo">
-    <img src="dono.foto" alt="Foto do dono" width="100" height="100">
-    <h6><u>link para a pag do dono</u></h6>
-    <h6>Até 15/05/2013</h6>
-    </fieldset>
-    <fieldset class="grupo">
-    <img src="dono.foto" alt="Foto do dono" width="100" height="100">
-    <h6><u>link para a pag do dono</u></h6>
-    <h6>Até 15/05/2013</h6>
-    </fieldset>
-  </div>
-</section>
-    
-
-
 
 
 </body>
