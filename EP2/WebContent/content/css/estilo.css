@@ -326,9 +326,7 @@ fieldset.grupo .campo {
 	width: 70%;
   }
 
-input {
-  display: none;
-}
+
 
 input + label {
   display: block;
