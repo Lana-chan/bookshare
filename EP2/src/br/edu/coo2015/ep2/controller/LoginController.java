@@ -137,6 +137,12 @@ public class LoginController {
 	}
 	
 	@RestritoUsuarioCadastrado
+	public void minhaColecao() {
+		result.include("exemplares",
+				usuarioSession.getUsuarioLogado().getExemplares());
+	}
+	
+	@RestritoUsuarioCadastrado
 	public void configuracoes() {
 		result.include("pessoa",
 				usuarioSession.getUsuarioLogado());

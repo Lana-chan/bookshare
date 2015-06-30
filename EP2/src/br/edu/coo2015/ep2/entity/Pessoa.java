@@ -36,12 +36,13 @@ public class Pessoa implements Serializable {
 	public Pessoa() {}
 	
 	public Pessoa(int nusp, String senha, String nome, String email,
-			Unidade unidade) {
+			Unidade unidade, List<Exemplar> exemplares) {
 		this.nusp = nusp;
 		this.senha = senha;
 		this.nome = nome;
 		this.email = email;
 		this.unidade = unidade;
+		this.exemplares = exemplares;
 	}
 
 	public String getNome() {
@@ -90,5 +91,9 @@ public class Pessoa implements Serializable {
 	
 	public void removeExemplar(Exemplar exemplar) {
 		exemplares.remove(exemplar);
+	}
+	
+	public List<Exemplar> getExemplares() {
+		return exemplares;
 	}
 }
