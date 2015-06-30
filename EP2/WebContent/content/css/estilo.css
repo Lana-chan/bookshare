@@ -23,7 +23,7 @@
 	font-style:bold;
 }
 
-/*-----------Conf da página em si--------------*/
+/*-----------Conf da pÃ¡gina em si--------------*/
 
 body{
 	alignment-adjust: center;
@@ -158,7 +158,7 @@ nav > ul > li a {
 	dysplay: inline;
 }
 
-/*--------Cabecalho de SEÇÃO--------------*/
+/*--------Cabecalho de SEÃ‡ÃƒO--------------*/
 #cabecalhoSecao{
 	text-align:center;
 	margin: 2em auto;
@@ -197,7 +197,7 @@ section{
 	}
 	
 	
-/*-------------FORMULÁRIOS---------------*/
+/*-------------FORMULÃ�RIOS---------------*/
 #cadastro{
 	border: 2px solid white;
 	width: auto;
@@ -288,7 +288,7 @@ fieldset.grupo .campo {
 	width: 15%;
 }
 
- /*----------------BOTÕES------------------*/
+ /*----------------BOTÃ•ES------------------*/
 .btnAcesso{
 	width: auto;
 	text-align:center;
@@ -324,4 +324,40 @@ fieldset.grupo .campo {
 	background: #F03;
   }
 
+input {
+  display: none;
+}
+
+input + label {
+  display: block;
+  float: left;
+  background: #DFDFDF;
+  padding: 0.6em;
+  margin: 3em -3.5em -0.2em 3.5em;
+  cursor: pointer;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+input:checked + label {
+  background: #F5F5F5;
+}
+
+pp {
+  clear:left;
+}
+
+.tab-hello,
+.tab-lorem,
+.tab-foo
+{
+  display: none;
+}
+
+#hello:checked ~ pp.tab-hello,
+#lorem:checked ~ pp.tab-lorem,
+#baz:checked ~ pp.tab-foo
+{
+  display: block;
+}
 
