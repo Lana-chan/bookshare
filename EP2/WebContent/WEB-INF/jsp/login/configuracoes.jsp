@@ -4,13 +4,14 @@
 <head>
 <meta charset="utf-8">
 <title>BookShare | Configurações</title>
-		<link rel="stylesheet" href="/content/css/estilo.css">
-		<link rel="stylesheet" href="/content/css/estilo2.css">
+	
+	<link rel="stylesheet" href="../content/css/estilo.css">
+
 </head>
 
 <body>
 
-<c:import url="/WEB-INF/login/cabecalho.html" />
+<jsp:include page='cabecalho.jsp'/>
 
 
 <!-----------Main------------------->

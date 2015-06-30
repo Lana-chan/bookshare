@@ -158,13 +158,170 @@ nav > ul > li a {
 	dysplay: inline;
 }
 
-/*--------Cabecalho de Seção--------------*/
+/*--------Cabecalho de SEÇÃO--------------*/
 #cabecalhoSecao{
 	text-align:center;
 	margin: 2em auto;
 }
 
 
+/*-------------CONFIG------------------*/
+section{
+	text-align:center;
+	display: flex;
+    align-items: stretch;
+	flex: 1;
+}
+	section div{
+		margin: 1em 5em;
+		padding: 1em 1em;
+		position: static;
+	}
 
+/*-------------NOTIFICACOES----------*/
+#notificacoes{
+	text-align:center;
+	display: block;
+}
+	#notificacoes div{
+		cursor:pointer;
+		margin: 1em 10em;
+		padding: 0.2em 0.2em;
+		position: static;
+		background-color: #7c197a;
+		color: #fff;
+	}
+
+	#notificacoes.click {
+   		display: none;
+	}
+	
+	
+/*-------------FORMULÁRIOS---------------*/
+#cadastro{
+	border: 2px solid white;
+	width: auto;
+	margin:auto;
+}
+
+form{
+	padding: 1em 1em;
+}
+
+fieldset {
+    margin: 1em 1em;
+	padding: .2em .2em;
+	display: block;
+    align-items: flex-start;
+	flex: 1;
+	border: none;
+	position: static;
+}
+
+legend{
+	display: inline;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.campo:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ 
+.campo {
+    margin-bottom: .2em;
+	display: flex;
+	position: satic;
+}
+ 
+.campo label {
+    margin-bottom: 0.2em;
+    color: inherit;
+    display: inline;
+}
+ 
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 0.5em;
+}
+
+.campo input:focus, .campo select:focus{
+    background: #FFF0F5;
+}
+ 
+.campo label.checkbox {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+ 
+ /*-------TABELA DE INBOX OUTBOX----------*/
+
+.tabelaColecao{
+	border-collapse:collapse;
+	border: 2px solid #696969;
+	table-layout: fixed;
+	text-align:left;
+	align-content: flex-start;
+	width: 80%;
+}
+
+.colunaImagem{
+	  width: 15%;
+	  background-color: red;
+}
+	
+.colunaDados{
+	width: 45%;
+	background-color: blue;
+	width: 100px;
+}
+	
+.colunaStatus{
+	width: 20%;
+}
+	
+.colunaBotoesAcao{
+	width: 15%;
+}
+
+ /*----------------BOTÕES------------------*/
+.btnAcesso{
+	width: auto;
+	text-align:center;
+	line-height: 1.2em;
+	font-size: 1.1em;
+	border-width:2px;
+	border-style:solid;
+	padding: 5px 5px;
+	border-radius: 3px;
+}
+
+  #btnPaginaFixa {
+	border-color: white;
+	color: #7c197a;
+	background: white;
+  }
+  
+  #btnPaginaNormal {
+	border-color: #7c197a;
+	color: white;
+	background: #7c197a;
+  }
+  
+  #btnConfirma {
+	border-color: #6C0;
+	color: white;
+	background: #6C0;
+  }
+  
+  #btnCancela {
+	border-color: #F03;
+	color: white;
+	background: #F03;
+  }
 
 

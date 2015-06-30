@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>BookShare | Login</title>
-		<link rel="stylesheet" href="../content/css/estilo.css">
-		<link rel="stylesheet" href="../content/css/estilo2.css">
-	</head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BookShare | Login</title>
+	
+	<link rel="stylesheet" href="../content/css/estilo.css">
+
+</head>
 	
     
   <body id="paginasFixas">
@@ -26,7 +27,7 @@
         <legend> Login </legend>       
             <div class="campo">
             <label>NUSP: </label>
-            <input type="number" name="pessoa.nusp" autofocus>
+            <input type="text" name="pessoa.nusp" autofocus>
             </div>
             
             <div class="campo">
