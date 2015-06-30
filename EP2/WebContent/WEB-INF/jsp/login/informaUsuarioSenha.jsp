@@ -3,8 +3,8 @@
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>BookShare | Login</title>
-		<link rel="stylesheet" href="/content/css/estilo.css">
-		<link rel="stylesheet" href="/content/css/estilo2.css">
+		<link rel="stylesheet" href="../content/css/estilo.css">
+		<link rel="stylesheet" href="../content/css/estilo2.css">
 	</head>
 	
     

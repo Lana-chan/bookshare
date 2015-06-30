@@ -38,7 +38,7 @@ public class AutorizacaoInterceptor implements Interceptor, Serializable {
 	public void intercept(InterceptorStack stack, ResourceMethod method,
 			Object resourceInstance) throws InterceptionException {
 		result.redirectTo(LoginController.class)
-				.mostraMensagem(
+				.problemaNaAutenticacao(
 						"Para acessar esse conteúdo, o usuário precisa estar logado no sistema.");
 	}
 }

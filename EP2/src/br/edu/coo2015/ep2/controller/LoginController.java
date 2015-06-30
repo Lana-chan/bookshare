@@ -77,9 +77,11 @@ public class LoginController {
 	}
 
 	public void informaUsuarioSenha() {
+		if(usuarioSession.estaLogado()) { usuarioSession.logout(); }
 	}
 	
 	public void cadastroUsuario() {
+		if(usuarioSession.estaLogado()) { usuarioSession.logout(); }
 		result.include("unidades", Arrays.asList(Unidade.values()));
 	}	
 
@@ -119,14 +121,15 @@ public class LoginController {
 		}
 	}
 
-	public void logadoComSucesso() {
-		result.include("nome", usuarioSession.getUsuarioLogado().getNome());
-	}
-
 	public void problemaNaAutenticacao(String mensagem) {
 		result.include("mensagem", mensagem);
 	}
 
+	@RestritoUsuarioCadastrado
+	public void logadoComSucesso() {
+		result.include("nome", usuarioSession.getUsuarioLogado().getNome());
+	}
+	
 	@RestritoUsuarioCadastrado
 	public void listaLivros() {
 		result.include("livros",

@@ -15,27 +15,27 @@
 <!-----------Cabecalho------------------->
 <header id="cabecalho">
   <div id="cabecalhoLogo">
-    	<a href="login/pesquisa.html">
-        	<img src="imgs/logo_32.png">
+    	<a href="pesquisa">
+        	<img src="../content/imgs/logo_32.png">
         	<h1> BookShare </h1>
         </a>
    </div>
     
   <div id="cabecalhoWelcome">
-    	<p> Bem-vinda, @usuaria </p>
+    	<p> Bem-vinda, ${nome} </p>
     </div>
 
 	<nav id="cabecalhoMenu">
-     <a href="login/minhaColecao.html">
-     <img src="/content/imgs/colecao_32.png" alt="Coleção" class="headerImgMenu"></a> 
-	  <a href="login/notificacoes.html">
-      <img src="/content/imgs/notificacoes_32.png" alt="Notificações" class="headerImgMenu"></a>
-      <a href="login/pesquisa.html">
-      <img src="/content/imgs/pesquisa_32.png" alt="Pesquisa" class="headerImgMenu"></a>
-	  <a href="login/configuracoes.html">
-      <img src="/content/imgs/config_32.png" alt="Configurações" class="headerImgMenu"></a> 
-	  <a href="login/informaUsuarioSenha.html">
-      <img src="/content/imgs/logout_32.png" alt="Log Out" class="headerImgMenu"></a>
+     <a href="minhaColecao">
+     <img src="../content/imgs/colecao_32.png" alt="Coleção" class="headerImgMenu"></a> 
+	  <a href="notificacoes">
+      <img src="../content/imgs/notificacoes_32.png" alt="Notificações" class="headerImgMenu"></a>
+      <a href="pesquisa">
+      <img src="../content/imgs/pesquisa_32.png" alt="Pesquisa" class="headerImgMenu"></a>
+	  <a href="configuracoes">
+      <img src="../content/imgs/config_32.png" alt="Configurações" class="headerImgMenu"></a> 
+	  <a href="informaUsuarioSenha">
+      <img src="../content/imgs/logout_32.png" alt="Log Out" class="headerImgMenu"></a>
 
     </nav>
     

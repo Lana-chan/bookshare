@@ -5,43 +5,19 @@
 <title>BookShare | Página Inicial</title>
 
 
-		<link rel="stylesheet" href="/content/css/estilo.css">
-		<link rel="stylesheet" href="/content/css/estilo2.css">
+		<link rel="stylesheet" href="../content/css/estilo.css">
+		<link rel="stylesheet" href="../content/css/estilo2.css">
 
 
 </head>
 
 <body>
 
-<!-----------Cabecalho------------------->
-<header id="cabecalho">
-  <div id="cabecalhoLogo">
-    	<a href="paginaInicial.jsp">
-        	<img src="imgs/logo_32.png">
-        	<h1> BookShare </h1>
-        </a>
-   </div>
-    
-  <div id="cabecalhoWelcome">
-    	<p> Bem-vinda, @usuaria </p>
-    </div>
-
-	<nav id="cabecalhoMenu">
-    <a href="minhaColecao.html"><img src="imgs/colecao_32.png" alt="Coleção" class="headerImgMenu"></a> 
-	  <a href="notificacoes.html">
-      <img src="imgs/notificacoes_32.png" alt="Notificações" class="headerImgMenu"></a>
-	  <a href="configuracoes.html">
-      <img src="imgs/config_32.png" alt="Configurações" class="headerImgMenu"></a> 
-	  <a href="index2.html">
-      <img src="imgs/logout_32.png" alt="Log Out" class="headerImgMenu"></a>
-    </nav>
-    
-</header>
-
+<jsp:include page='cabecalho.jsp'/>
 
 <section id="guiaAcesso">
 	<div id="Pesquisa">
-    	<h2> Econtre seu livro. </h2>
+    	<h2> Encontre seu livro. </h2>
       <input type="search">
         <p> Buscar por: 
           <input type="radio" value="exemplar.titulo"> 
