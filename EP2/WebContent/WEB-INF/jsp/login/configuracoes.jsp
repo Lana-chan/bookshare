@@ -22,17 +22,13 @@
     
 <section id="main">
 
-<form action="salvarConfiguracoes">
+<form action="atualiza">
 	<fieldset class="grupo">
     
         <legend> Perfil </legend>
         <div class="campo">
         	<label>Nome: </label>
-            <input type="text" name="pessoa.nusp">
-        </div>
-        <div class="campo">
-            <label>Unidade: </label>
-            <input type="text" name="pessoa.unidade">
+            <input type="text" name="pessoa.nome">
         </div>
         <div class="campo">
             <label>Email: </label>
@@ -48,7 +44,7 @@
       </div>
       <div class="campo">
       <label>Repita a nova senha: </label>
-      <input type="password" name="pessoa.senha">
+      <input type="password" name="senha">
       </div>   
     </fieldset>  
     

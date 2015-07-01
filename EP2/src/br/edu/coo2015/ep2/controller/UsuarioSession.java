@@ -29,4 +29,8 @@ public class UsuarioSession implements Serializable {
 	public Pessoa getUsuarioLogado() {
 		return pessoa;
 	}
+	
+	public int numUspUsuario(){
+		return pessoa.getNusp();
+	}
 }

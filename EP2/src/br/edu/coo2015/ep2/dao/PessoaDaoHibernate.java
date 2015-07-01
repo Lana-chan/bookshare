@@ -27,8 +27,11 @@ public class PessoaDaoHibernate implements Serializable  {
 		tx.commit();
 	}
 	
-	public void atualiza(Pessoa pessoa) {
+	public void atualiza(Pessoa pessoa, String nome, String email, String senha) {
 		Transaction tx = this.session.beginTransaction();
+		pessoa.setNome(nome);
+		pessoa.setEmail(email);
+		pessoa.setSenha(senha);
 		this.session.update(pessoa);
 		tx.commit();
 	}

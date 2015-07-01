@@ -111,10 +111,10 @@ public class LoginController {
 		}
 	}
 	
-	public void atualiza(@NotNull @Valid Pessoa pessoa) {
+	public void atualiza(@NotNull @Valid Pessoa pessoa, String nome, String email, String senha) {
 		validator.onErrorUsePageOf(LoginController.class).errorPage();
 		try {
-			gerenciadorDeCadastros.atualizaUsuario(pessoa);
+			gerenciadorDeCadastros.atualizaUsuario(pessoa, nome, email, senha);
 			result.redirectTo(this).configuracoes();
 		} catch(CadastroException e) {
 			result.redirectTo(this).problemaNaAutenticacao(e.getMessage());
