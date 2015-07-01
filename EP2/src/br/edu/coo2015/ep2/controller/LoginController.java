@@ -85,11 +85,11 @@ public class LoginController {
 		result.include("unidades", Arrays.asList(Unidade.values()));
 	}	
 
-	public void autentica(@Valid Pessoa pessoa) {
+	public void autentica(Pessoa pessoa) {
 		validator.onErrorUsePageOf(LoginController.class).errorPage();
 		try {
-			gerenciadorDeAutenticacoes.autenticaUsuarioComum(pessoa);
-			usuarioSession.login(pessoa);
+			Pessoa usuarioCompleto = gerenciadorDeAutenticacoes.autenticaUsuarioComum(pessoa);
+			usuarioSession.login(usuarioCompleto);
 			result.redirectTo(this).logadoComSucesso();
 		} catch (AutenticacaoException e) {
 			// No redirectTo, o request Ž perdido (Ž iniciado um novo)

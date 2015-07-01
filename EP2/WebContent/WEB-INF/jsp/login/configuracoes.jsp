@@ -31,6 +31,10 @@
             <input type="text" name="pessoa.nome">
         </div>
         <div class="campo">
+            <label>Unidade: </label>
+            <input type="text" name="pessoa.unidade">
+        </div>
+        <div class="campo">
             <label>Email: </label>
             <input type="email" name="pessoa.email">
         

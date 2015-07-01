@@ -13,7 +13,7 @@ public class GerenciadorDeAutenticacoes {
 		this.pessoaDaoHibernate = pessoaDaoHibernate;
 	}
 	
-	public boolean autenticaUsuarioComum(Pessoa pessoa) throws AutenticacaoException {
+	public Pessoa autenticaUsuarioComum(Pessoa pessoa) throws AutenticacaoException {
 		
 		//vai no banco de dados e procura pelo usu‡rio
 		/*if(!"Raulzito".equalsIgnoreCase(pessoa.getUsuario())) {
@@ -30,7 +30,6 @@ public class GerenciadorDeAutenticacoes {
 		
 		// recupera outras informa�›es do usu‡rio no BD  
 		/*pessoa.setNome("Raul Seixas da Silva");*/
-		pessoa.setNome(usuario.getNome());
-		return true;
+		return usuario;
 	}
 }

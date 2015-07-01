@@ -23,10 +23,7 @@ public class Pessoa implements Serializable {
 	@Length(min = 3, message="Senha deve ter mínimo de 3 caracteres")
 	private String senha;
 	
-	@NotNull
 	private String nome;
-	
-	@NotNull
 	private String email;
 	private Unidade unidade;
 	
