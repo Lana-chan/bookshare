@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="utf-8">
@@ -20,16 +20,18 @@
 <!-----------Corpo------------------->
 
 <section id="guiaAcesso">
+<form action="listaLivros">
 	<div id="Pesquisa">
       <input type="search" size="50">
       <button type="submit" class="btnAcesso" id="btnPaginaNormal"><img src="imgs/pesquisa_32.png" alt="Pesquisar"></button>
         <z2><br> Buscar por: 
-          <input type="radio" value="exemplar.titulo"> Título
-        <input type="radio" value="exemplar.autor"> Autor
-        <input type="radio" value="exemplar.ISBN"> ISBN
-    	<input type="checkbox" value="exemplar.unidade"> Pesquisar somente na minha unidade.
+          <input type="radio" name="titulo"> Título
+        <input type="radio" value="autor"> Autor
+        <input type="radio" value="ISBN"> ISBN
+    	<input type="checkbox" value="unidade"> Pesquisar somente na minha unidade.
     </z2>
 </div>
+</form>
 </section>
 
 
